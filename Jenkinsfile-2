@@ -13,7 +13,6 @@ pipeline{
             }
             steps {
                 bat 'echo Deploying'
-                environment name: 'DEPLOY_TO', values: 'production'
             }
         }
     }
