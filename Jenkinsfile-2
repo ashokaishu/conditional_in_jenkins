@@ -9,7 +9,7 @@ pipeline{
         stage('Deploy') {
             when {
                 branch 'master'
-                environment name: 'DEPLOY_TO', values: 'production'
+                environment name: 'DEPLOY_TO', value: 'production'
             }
             steps {
                 bat 'echo Deploying'
